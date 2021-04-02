@@ -1,3 +1,9 @@
+/*
+Resources : 
+https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md
+https://overapi.com/javascript
+https://learnxinyminutes.com/docs/javascript/
+*/
 //code snippet : function
 // Draw as many cats as you want!
 // var drawCats = function (howManyTimes) {
@@ -29,9 +35,36 @@ variable.slice[0,2] similar to python variable[0:2]
 console.log(`Hope you are surrounded by ${x}`) //backtick and ${expression} template literal
 use const to declare arrays
 
+expressions in string -> f-string a.k.a template literal
+    console.log(`rounded number is ${Math.round(PI)}`)
+
+Everything is a object, so Math.round() NOT round() --need to know which is the object before issuing methods
+
+String Methods:
+var.length
+var[0]
+var[string.length]
+string.toUpperCase()
+string.substr()
+string.substring()
+string.split(' ') ==> splits to an array
+let string='JavaScript'
+array=string.split('') //['J','a']
+
 
 */
 // const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
-const fruits=['bananana','orange','mango','lemon']
-console.log('Fruits:', fruits)
-console.log('Number of fruits:', fruits.length)
+// const fruits=['bananana','orange','mango','lemon']
+// console.log('Fruits:', fruits)
+// console.log('Number of fruits:', fruits.length)
+
+// For working with Numbers use standard Math library
+// for (let index = 0; index < 10; index++) {
+//     const PI = Math.random()
+//     console.log(PI)
+//     // text=
+//     console.log(`rounded number is ${Math.round(PI)}`)
+// }
+let string='JavaScript'
+array=string.split('') //['J','a']
+console.log(array)
