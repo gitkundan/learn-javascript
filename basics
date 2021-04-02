@@ -3,6 +3,11 @@ Resources :
 https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md
 https://overapi.com/javascript
 https://learnxinyminutes.com/docs/javascript/
+comparison of js and python
+https://www.freecodecamp.org/news/python-vs-javascript-what-are-the-key-differences-between-the-two-popular-programming-languages/
+Array manipulation : https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/
+
+
 */
 //code snippet : function
 // Draw as many cats as you want!
@@ -50,6 +55,49 @@ string.substring()
 string.split(' ') ==> splits to an array
 let string='JavaScript'
 array=string.split('') //['J','a']
+string.trim()
+string.includes('substring') //checks for substring in string
+
+//check type
+console.log(typeof 'juice')
+
+
+Cast
+string to Int or Float to Int : parseInt()
+string to float : parseFloat()
+
+------------------------------------------------------------------------------
+#Boolean, Dates
+Truthy values
+
+    All numbers(positive and negative) are truthy except zero
+    All strings are truthy
+    The boolean true
+
+Falsy values
+
+    0
+    0n
+    null
+    undefined
+    NaN
+    the boolean false
+    '', "", ``, empty string
+
+It is good to remember those truthy values and falsy values. In later section, we will use them with conditions to make decisions.
+
+To get remainder i.e. modulo division : 5 % 3
+
+comparison operator:
+&& : and
+|| : or
+!= : not
+
+------------------------------------------------------------------------------------------------------------------
+Array Methods
+Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift
+------------------------------------------------------------------------------------------------------------------
+
 
 
 */
@@ -65,6 +113,18 @@ array=string.split('') //['J','a']
 //     // text=
 //     console.log(`rounded number is ${Math.round(PI)}`)
 // }
-let string='JavaScript'
-array=string.split('') //['J','a']
-console.log(array)
+string='I love JavaScript'
+array=string.split(' ')
+// console.log(array.length)
+// first=array[0]
+// console.log(array[array.length-1])
+// console.log(array[array.length-1])
+let newArray=array.shift('love')
+// console.log(array)
+fruits = ['banana', 'apple', 'peach','mango']
+// console.log(Object.keys(fruits))
+
+// fruits.length=2
+// console.log(Array.isArray('fruits'))
+const x = 1
+const x = 3
