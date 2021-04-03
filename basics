@@ -145,8 +145,23 @@ for (const num of numbers) {
 
 // 1 2 3 4 5
 
-*/
+
+------------------------------------------------------------------------------------------------------------------
+Function
+------------------------------------------------------------------------------------------------------------------
+
 function getName(firstName,lastName) {
-    console.log(`your name is ${firstName} and ${lastName}`)
+    let result =`your name is ${firstName} and ${lastName}`
+    return result
 }
-getName('k','g')
+console.log(getName('k','g'))
+
+When number of arguments is uncertain have to access arguments array like object:
+function sumThem() {
+    console.log(arguments)
+}
+
+sumThem(1,2,3)
+
+*/
+
