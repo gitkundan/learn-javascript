@@ -106,20 +106,24 @@ const fruits = ['banana', 'orange', 'mango', 'lemon']
 let index = fruits.indexOf('banana')  // 0
 
 if(index != -1){
-   console.log('This fruit does exist in the array')  
+v   console.log('This fruit does exist in the array')  
 } else {
     console.log('This fruit does not exist in the array') //value is -1 if not found
 }
 // This fruit does exist in the array
 
-
-
-
-*/
 // const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
 // const fruits=['bananana','orange','mango','lemon']
 // console.log('Fruits:', fruits)
 // console.log('Number of fruits:', fruits.length)
+
+let shallowCopy = fruits.slice() // this is how to make a copy
+
+
+/*
+------------------------------------------------------------------------------------------------------------------
+For Loop
+------------------------------------------------------------------------------------------------------------------
 
 // For working with Numbers use standard Math library
 // for (let index = 0; index < 10; index++) {
@@ -129,208 +133,20 @@ if(index != -1){
 //     console.log(`rounded number is ${Math.round(PI)}`)
 // }
 
-let countries = [
-    'Afghanistan',
-    'Albania',
-    'Algeria',
-    'Andorra',
-    'Angola',
-    'Antigua and Barbuda',
-    'Argentina',
-    'Armenia',
-    'Australia',
-    'Austria',
-    'Azerbaijan',
-    'Bahamas',
-    'Bahrain',
-    'Bangladesh',
-    'Barbados',
-    'Belarus',
-    'Belgium',
-    'Belize',
-    'Benin',
-    'Bhutan',
-    'Bolivia',
-    'Bosnia and Herzegovina',
-    'Botswana',
-    'Brazil',
-    'Brunei',
-    'Bulgaria',
-    'Burkina Faso',
-    'Burundi',
-    'Cambodia',
-    'Cameroon',
-    'Canada',
-    'Cape Verde',
-    'Central African Republic',
-    'Chad',
-    'Chile',
-    'China',
-    'Colombi',
-    'Comoros',
-    'Congo (Brazzaville)',
-    'Congo',
-    'Costa Rica',
-    "Cote d'Ivoire",
-    'Croatia',
-    'Cuba',
-    'Cyprus',
-    'Czech Republic',
-    'Denmark',
-    'Djibouti',
-    'Dominica',
-    'Dominican Republic',
-    'East Timor (Timor Timur)',
-    'Ecuador',
-    'Egypt',
-    'El Salvador',
-    'Equatorial Guinea',
-    'Eritrea',
-    'Estonia',
-    'Ethiopia',
-    'Fiji',
-    'Finland',
-    'France',
-    'Gabon',
-    'Gambia, The',
-    'Georgia',
-    'Germany',
-    'Ghana',
-    'Greece',
-    'Grenada',
-    'Guatemala',
-    'Guinea',
-    'Guinea-Bissau',
-    'Guyana',
-    'Haiti',
-    'Honduras',
-    'Hungary',
-    'Iceland',
-    'India',
-    'Indonesia',
-    'Iran',
-    'Iraq',
-    'Ireland',
-    'Israel',
-    'Italy',
-    'Jamaica',
-    'Japan',
-    'Jordan',
-    'Kazakhstan',
-    'Kenya',
-    'Kiribati',
-    'Korea, North',
-    'Korea, South',
-    'Kuwait',
-    'Kyrgyzstan',
-    'Laos',
-    'Latvia',
-    'Lebanon',
-    'Lesotho',
-    'Liberia',
-    'Libya',
-    'Liechtenstein',
-    'Lithuania',
-    'Luxembourg',
-    'Macedonia',
-    'Madagascar',
-    'Malawi',
-    'Malaysia',
-    'Maldives',
-    'Mali',
-    'Malta',
-    'Marshall Islands',
-    'Mauritania',
-    'Mauritius',
-    'Mexico',
-    'Micronesia',
-    'Moldova',
-    'Monaco',
-    'Mongolia',
-    'Morocco',
-    'Mozambique',
-    'Myanmar',
-    'Namibia',
-    'Nauru',
-    'Nepal',
-    'Netherlands',
-    'New Zealand',
-    'Nicaragua',
-    'Niger',
-    'Nigeria',
-    'Norway',
-    'Oman',
-    'Pakistan',
-    'Palau',
-    'Panama',
-    'Papua New Guinea',
-    'Paraguay',
-    'Peru',
-    'Philippines',
-    'Poland',
-    'Portugal',
-    'Qatar',
-    'Romania',
-    'Russia',
-    'Rwanda',
-    'Saint Kitts and Nevis',
-    'Saint Lucia',
-    'Saint Vincent',
-    'Samoa',
-    'San Marino',
-    'Sao Tome and Principe',
-    'Saudi Arabia',
-    'Senegal',
-    'Serbia and Montenegro',
-    'Seychelles',
-    'Sierra Leone',
-    'Singapore',
-    'Slovakia',
-    'Slovenia',
-    'Solomon Islands',
-    'Somalia',
-    'South Africa',
-    'Spain',
-    'Sri Lanka',
-    'Sudan',
-    'Suriname',
-    'Swaziland',
-    'Sweden',
-    'Switzerland',
-    'Syria',
-    'Taiwan',
-    'Tajikistan',
-    'Tanzania',
-    'Thailand',
-    'Togo',
-    'Tonga',
-    'Trinidad and Tobago',
-    'Tunisia',
-    'Turkey',
-    'Turkmenistan',
-    'Tuvalu',
-    'Uganda',
-    'Ukraine',
-    'United Arab Emirates',
-    'United Kingdom',
-    'United States',
-    'Uruguay',
-    'Uzbekistan',
-    'Vanuatu',
-    'Vatican City',
-    'Venezuela',
-    'Vietnam',
-    'Yemen',
-    'Zambia',
-    'Zimbabwe'
-  ]
-for (let i = 0; i < countries.length; i++) {
-    const element = countries[i]
-    if (element==='India' && element==='China') {
-        console.log(element)
-    } else
-    if (element==='Yemen'){
-        console.log(element)
-    }
-    // console.log(element)    
+for of loop
+
+We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array.
+
+const numbers = [1, 2, 3, 4, 5]
+
+for (const num of numbers) {
+  console.log(num)
 }
+
+// 1 2 3 4 5
+
+*/
+function getName(firstName,lastName) {
+    console.log(`your name is ${firstName} and ${lastName}`)
+}
+getName('k','g')
