@@ -163,13 +163,74 @@ function sumThem() {
 
 sumThem(1,2,3)
 
-*/
-let x=0
+
+let x=1
 function getFactorial (number){
-    
-        x = number * getFactorial(number-1)    
-        
+    if (number>0) {
+        x = number * getFactorial(number-1)
+        console.log([number,x])
+    }    
     return x    
 }
 
-console.log(getFactorial(3))
+------------------------------------------------------------------------------------------------------------------
+Object
+------------------------------------------------------------------------------------------------------------------
+
+  const newPerson={
+      firstName: 'John',
+      lastName: 'White',
+      age: "256",
+      country:'UK',
+      city:'Delhi',
+      skills:[
+          'HTML',
+          'CSS',
+          'JS',
+          'Mongo'
+      ],
+      isMarried: true,
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+  }
+  newPerson.skills.push('Hindi')  -- amend property
+console.log(Object.hasOwnProperty('name')) --check if the property exists
+const keys = Object.keys(copyPerson) -- dump all keys
+const keys = Object.values(copyPerson) -- get all values NOT keys
+const keys = Object.entries(copyPerson) -- To get the keys and values in an array
+
+Methods:
+Object.assign to copy
+
+
+------------------------------------------------------------------------------------------------------------------
+Browser debugging
+------------------------------------------------------------------------------------------------------------------
+for arrays and objects:
+const user = {
+  name: 'Asabeneh',
+  title: 'Programmer',
+  country: 'Finland',
+  city: 'Helsinki',
+  age: 250
+}
+console.table(user)
+
+calculate execution time:
+const countries = [
+  ['Finland', 'Helsinki'],
+  ['Sweden', 'Stockholm'],
+  ['Norway', 'Oslo']
+]
+
+console.time('Regular for loop')
+for (let i = 0; i < countries.length; i++) {
+  console.log(countries[i][0], countries[i][1])
+}
+console.timeEnd('Regular for loop')
+
+*/
+
+*/
+
