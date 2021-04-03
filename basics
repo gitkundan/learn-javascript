@@ -164,4 +164,12 @@ function sumThem() {
 sumThem(1,2,3)
 
 */
+let x=0
+function getFactorial (number){
+    
+        x = number * getFactorial(number-1)    
+        
+    return x    
+}
 
+console.log(getFactorial(3))
