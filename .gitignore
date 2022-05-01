@@ -1,0 +1,5 @@
+*.mp4
+gitmerge.sh
+*.vscode
+*.code-workspace
+*.pdf
